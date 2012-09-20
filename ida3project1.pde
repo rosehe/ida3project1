@@ -6,7 +6,6 @@ import ddf.minim.signals.*;
 import ddf.minim.analysis.*;
 
 
-float analog1;
 AudioSample bassSample;
 AudioSample bassSample2;
 AudioSample snareSample;
