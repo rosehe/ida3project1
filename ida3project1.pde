@@ -18,8 +18,7 @@ Minim minim;
 void setup(){
  size(500, 500);
     println(Arduino.list()); 
-    arduino = new Arduino(this, Arduino.list()[0], 57600); // CHANGE ARRAY INDEX TO MATCH PORT NUMBER
-    
+    arduino = new Arduino(this, Arduino.list()[0], 57600); 
     
      minim = new Minim(this);
   bassSample = minim.loadSample("bassM3_edit.mp3");
@@ -74,7 +73,7 @@ if (arduino.analogRead(2)>=30){
 
 void stop()
 {
-  // always close Minim audio classes when you are done with them
+  
   bassSample.close();
   bassSample2.close();
   snareSample.close();
